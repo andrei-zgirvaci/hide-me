@@ -1,10 +1,24 @@
 # hide-me - mac and hostname random changer
 
 ##About
-This script will change the mac address to a random one and will pick a random hostname from specified file
+This script will change the mac address to a random one and will pick a random hostname from specified file.
+
+##Installation
+
+**_To install this script, type following commands in your shell:_**
+```
+  git clone https://github.com/MD3XTER/hide-me
+```
+  
+**_To execute script from anywhere, type this:_**
+```
+  PATH=/path/to/file:"$PATH"
+```
+
+**_Now you can type 'hide-me' from anywhere and it will execute!_**
 
 ##Options
-  Usage: hide-me.py device [file]
+**Usage: hide-me device [file_location]**
 
 ```
   -h, --help       Print this help
@@ -13,6 +27,9 @@ This script will change the mac address to a random one and will pick a random h
   
   Report bugs to https://github.com/MD3XTER/hide-me/issues.
 ```
+
+#Contribute
+Contributions are always welcome!
 
 ##License
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or any later version.
@@ -24,4 +41,4 @@ You should have received a copy of the GNU General Public License along with thi
 See 'LICENSE' for more information.
 
 ##Original author
-**Andrei Zgirvaci**
+> Andrei Zgirvaci
