@@ -1,4 +1,4 @@
-# hide-me - mac and hostname random changer
+#hide-me - mac and hostname random changer
 
 ##About
 This script will change the mac address to a random one and will pick a random hostname from specified file.
@@ -28,7 +28,7 @@ This script will change the mac address to a random one and will pick a random h
   Report bugs to https://github.com/MD3XTER/hide-me/issues.
 ```
 
-#Contribute
+##Contribute
 Contributions are always welcome!
 
 ##License
@@ -40,5 +40,5 @@ You should have received a copy of the GNU General Public License along with thi
 
 See 'LICENSE' for more information.
 
-##Original author
+##Author
 > Andrei Zgirvaci
