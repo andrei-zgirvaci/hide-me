@@ -5,26 +5,29 @@
 # and will pick a random hostname from specified file                              #
 # Requirements: macchanger needs to be installed                                   #
 # Written by: Andrei Zgirvaci                                                      #
-# Github: https://github.com/MD3XTER/                                              #
+# Github: https://github.com/MD3XTER/hide-me                                       #
 ####################################################################################
 
 __name__ = "hide-me"
+__version__ = " "
 
 import sys
 
 def usage():
-	print ("\n"+__name__+"\n")
+	print (__name__+__version__)
+	print ("mac and hostname random changer\n")
 	print ("usage: "+__name__+" device [file_location]\n")
-	print ("Try "+__name__+" -h for more options.\n")
+	print ("Try "+__name__+" -h for more options.")
 	exit()
 
 def help():
-	print ("\n"+__name__+"\n")
-	print ("usage: "+__name__+" device [file]\n\n")
-	print ("  -h, --help       Print this help\n")
-	print ("  [file_location]  Indicate file location with hostnames\n")
+	print (__name__)
+	print ("mac and hostname random changer\n")
+	print ("usage: "+__name__+" device [file_location]\n")
+	print ("  -h, --help       Print this help")
+	print ("  [file_location]  Indicate file location with hostnames")
 	print ("  quit             Retrieve changes to original\n")
-	print ("\nReport bugs to https://github.com/MD3XTER/"+__name__+"/issues.\n")
+	print ("Report bugs to https://github.com/MD3XTER/"+__name__+"/issues.")
 	exit()
 
 total = len(sys.argv)
@@ -92,10 +95,10 @@ if total == 3:
 			lines = open(str(sys.argv[2])).read().splitlines()
 			line = random.choice(lines)
 		else:
-			print ("\n"+__name__+"\n")
-			print ("usage: "+__name__+" device [file_location]\n")
-			print ("File does not exist.")
-			print ("Try "+__name__+" -h for more options.\n")
+			print (__name__+__version__)
+			print ("mac and hostname random changer\n")
+			print ("[ERROR] File does not exist.\n")
+			print ("Try "+__name__+" -h for more options.")
 			exit()
 
 		if not subprocess.call(["ifconfig "+interface+" down"], shell=True):
@@ -117,9 +120,10 @@ if total == 3:
 		else:
 			error()
 	else:
-		print ("\n"+__name__+"\n")
+		print (__name__+__version__)
+		print ("mac and hostname random changer\n")
 		print ("[ERROR] Set device name: No such device.\n")
-		print ("Try "+__name__+" -h for more options.\n")
+		print ("Try "+__name__+" -h for more options.")
 		exit()
 
 elif total == 2:
