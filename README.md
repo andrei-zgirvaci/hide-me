@@ -24,4 +24,4 @@ You should have received a copy of the GNU General Public License along with thi
 See 'LICENSE' for more information.
 
 ##Original author
-MD3XTER Andrei Zgirvaci
+**Andrei Zgirvaci**
