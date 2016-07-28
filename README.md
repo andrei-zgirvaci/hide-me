@@ -5,17 +5,17 @@ This script will change the mac address to a random one and will pick a random h
 
 ##Installation
 
-**_To install this script, type following commands in your shell:_**
+*To install this script, type following commands in your shell:*
 ```
   git clone https://github.com/MD3XTER/hide-me
 ```
   
-**_To execute script from anywhere, type this:_**
+*To execute script from anywhere, type this:*
 ```
   PATH=/path/to/file:"$PATH"
 ```
 
-**_Now you can type 'hide-me' from anywhere and it will execute!_**
+*Now you can type 'hide-me' from anywhere and it will execute!*
 
 ##Options
 **Usage: hide-me device [file_location]**
