@@ -17,7 +17,7 @@ To execute script from anywhere, type this:
 *Now you can type 'hide-me' from anywhere and it will execute!*
 
 ##Requirements
-macchanger needs to be installed and command hostname should be available!!!
+**_macchanger needs to be installed and command hostname should be available!!!_**
 
 *You can install macchanger by typing next line:*
 ```
