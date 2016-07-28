@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 ####################################################################################
-# hide-me - this script will change the mac address to a random one                #
-# and will pick a random hostname from specified file                              #
+# hide-me - this script will change the mac address to a random one and will pick  #
+# a random hostname from specified file.                                           #
 # Requirements: macchanger needs to be installed                                   #
 # Written by: Andrei Zgirvaci                                                      #
 # Github: https://github.com/MD3XTER/hide-me                                       #
@@ -56,7 +56,7 @@ if total == 3:
 
 	def change(interface):
 		#changing mac address to a random one
-		print ("\nChanging mac addres... \n")
+		print ("\nChanging mac address... \n")
 		subprocess.call(["macchanger -A "+interface], shell=True)
 
 		#changing hostname to a random line from file
@@ -69,8 +69,8 @@ if total == 3:
 		interfaceup(interface)
 
 	def retrieve(interface, oldhost):
-		#change mac addres back to original one
-		print ("\nChanging macc addres to permanent one...\n")
+		#change mac address back to original one
+		print ("\nChanging macc address to permanent one...\n")
 		subprocess.call(["ifconfig "+interface+" down"], shell=True)
 		subprocess.call(["macchanger -p "+interface], shell=True)
 
@@ -105,7 +105,7 @@ if total == 3:
 
 			oldhost = hostname()
 
-			#change mac addres and hostname
+			#change mac address and hostname
 			change(interface)
 
 			#whait for 'quit' input
