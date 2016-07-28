@@ -12,15 +12,18 @@ This script will change the mac address to a random one and will pick a random h
   
 *To execute script from anywhere, type this:*
 ```
-  PATH=/path/to/file:"$PATH"
+  PATH=/path/to/hide-me:"$PATH"
 ```
 
 *Now you can type 'hide-me' from anywhere and it will execute!*
 
-##Options
-**Usage: hide-me device [file_location]**
-
+##Usage
 ```
+  hide-me
+  mac and hostname random changer
+  
+  usage: hide-me device [file_location]
+
   -h, --help       Print this help
   [file_location]  Indicate file location with hostnames
   quit             Retrieve changes to original
