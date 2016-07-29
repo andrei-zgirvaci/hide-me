@@ -3,7 +3,8 @@
 ####################################################################################
 # hide-me - this script will change the mac address to a random one and will pick  #
 # a random hostname from specified file.                                           #
-# Requirements: macchanger needs to be installed                                   #
+# Requirements: macchanger' needs to be installed                                  #
+# and command: 'hostname' should be available!!!                                   #
 # Written by: Andrei Zgirvaci                                                      #
 # Github: https://github.com/MD3XTER/hide-me                                       #
 ####################################################################################
@@ -21,7 +22,7 @@ def usage():
 	exit()
 
 def help():
-	print (__name__)
+	print (__name__+__version__)
 	print ("mac and hostname random changer\n")
 	print ("usage: "+__name__+" device [file_location]\n")
 	print ("  -h, --help       Print this help")
@@ -41,10 +42,17 @@ if total == 3:
 		print ("Script encounter an error, sorry...\n")
 		exit()
 
+	def runcommand(string):
+		try:
+			subprocess.call([string], shell=True)
+			return True
+		except:
+			error()
+
 	def interfaceup(interface):
-		if not subprocess.call(["ifconfig "+interface+" up"], shell=True):
-			subprocess.call(["service network-manager restart"], shell=True)
-			print ("Interface should be up!!!\n")
+		if runcommand("ifconfig "+interface+" up"):
+			runcommand("service network-manager restart")
+			print ("\nInterface should be up!!!\n")
 		else:
 			error()
 
@@ -57,13 +65,13 @@ if total == 3:
 	def change(interface):
 		#changing mac address to a random one
 		print ("\nChanging mac address... \n")
-		subprocess.call(["macchanger -A "+interface], shell=True)
+		runcommand("macchanger -A "+interface)
 
 		#changing hostname to a random line from file
 		print ("\nChanging Hostname...\n")
 		print ("Previus Hostname: "+hostname())
-		subprocess.call(["hostname "+line], shell=True)
-		print ("Current Hostname: "+hostname()+"\n")
+		runcommand("hostname "+line)
+		print ("Current Hostname: "+hostname()+"")
 
 		#putting interface up
 		interfaceup(interface)
@@ -71,12 +79,12 @@ if total == 3:
 	def retrieve(interface, oldhost):
 		#change mac address back to original one
 		print ("\nChanging macc address to permanent one...\n")
-		subprocess.call(["ifconfig "+interface+" down"], shell=True)
-		subprocess.call(["macchanger -p "+interface], shell=True)
+		runcommand("ifconfig "+interface+" down")
+		runcommand("macchanger -p "+interface)
 
 		#change hostname back to original one
 		print ("\nRetrieving hostname to original...\n")
-		subprocess.call(["hostname "+oldhost], shell=True)
+		runcommand("hostname "+oldhost)
 		print ("Hostname changed to: "+hostname()+"\n")
 
 		#putting interface up
@@ -101,7 +109,7 @@ if total == 3:
 			print ("Try "+__name__+" -h for more options.")
 			exit()
 
-		if not subprocess.call(["ifconfig "+interface+" down"], shell=True):
+		if runcommand("ifconfig "+interface+" down"):
 
 			oldhost = hostname()
 
