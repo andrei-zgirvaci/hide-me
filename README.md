@@ -1,7 +1,7 @@
 #mac and hostname random changer (hide-me)
 Every time I was trying to do an Network Penetration Testing, I needed to do some steps to make sure I was hidden, put my interface down, change my mac address, change my hostname, putting interface back up, and restarting network-manager service, and when done, changing my mac address and hostname to original one. This took me a while and sometimes I even forgot to do something from those steps. Then I came to an idea to make a script that does all that for me. Basicly this script will change the mac address to a random one and will pick a random hostname from specified file.
 
-Written by: Andrei Zgirvaci
+WRITTEN BY: Andrei Zgirvaci
 
 DISCLAIMER: This is only for testing purposes and can only be used where strict consent has been given. Do not use this for illegal purposes, period.
 
