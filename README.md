@@ -23,13 +23,13 @@ To execute script from anywhere, type this:
 ##Requirements
 **_'macchanger' needs to be installed and command: 'hostname' should be available!!!_**
 
-*You can install macchanger by typing next line:*
+You can install macchanger by typing next line:
 ```
 apt-get install macchanger
 ```
 
 ##Usage
-*Usage: hide-me device [file_location]*
+Usage: hide-me device [file_location]
 ```
   -h, --help       Print this help
   [file_location]  Indicate file location with hostnames
