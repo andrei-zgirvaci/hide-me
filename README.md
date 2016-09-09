@@ -7,7 +7,7 @@ DISCLAIMER: This is only for testing purposes and can only be used where strict 
 
 CONTRIBUTE: Contributions are always welcome!
 
-*If you can, please take a minute to star this repo and follow me, I will be much appreciated!!!*
+*If you can, please take a minute to star this repo and follow me, It will be much appreciated!!!*
 
 ##Installation
 To install this script, type following commands in your shell:
