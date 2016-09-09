@@ -20,10 +20,12 @@ To execute script from anywhere, add this to ~/.bashrc:
   PATH=/path/to/hide-me:"$PATH"
 ```
 
-*Now you can type 'hide-me' from anywhere and it will execute!*
+*Restart terminal and now you can type 'hide-me' from anywhere and it will execute!*
 
 ##Requirements
-**_'macchanger' needs to be installed and command: 'hostname' should be available!!!_**
+  1. **_python_** version > **_3.5_** installed
+  2. Command **_hostname_** should be available
+  3. **_macchanger_** installed
 
 You can install macchanger by typing next line:
 ```
@@ -40,9 +42,8 @@ Usage: hide-me device [file_location]
 
 *A default .txt file with random hostnames is located in 'dict' folder*
 
-##Supported platforms
+##Tested platforms
   * Linux
-  * Ubuntu
 
 ##License
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or any later version.
