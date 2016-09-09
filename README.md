@@ -15,7 +15,7 @@ To install this script, type following commands in your shell:
   git clone https://github.com/MD3XTER/hide-me
 ```
   
-To execute script from anywhere, type this:
+To execute script from anywhere, add this to ~/.bashrc:
 ```
   PATH=/path/to/hide-me:"$PATH"
 ```
