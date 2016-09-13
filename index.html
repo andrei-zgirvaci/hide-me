@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Hide-me by MD3XTER</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Hide-me</h1>
+        <h2>Mac and hostname random changer</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/MD3XTER/hide-me/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/MD3XTER/hide-me/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/MD3XTER/hide-me" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="mac-and-hostname-random-changer-hide-me" class="anchor" href="#mac-and-hostname-random-changer-hide-me" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Mac and hostname random changer <a href="https://md3xter.github.io/hide-me/">(hide-me)</a>
+</h1>
+
+<p>Every time I was trying to do an Network Penetration Testing, I needed to do some steps to make sure I was hidden, put my interface down, change my mac address, change my hostname, putting interface back up, and restarting network-manager service, and when done, changing my mac address and hostname to original one. This took me a while and sometimes I even forgot to do something from those steps. Then I came to an idea to make a script that does all that for me. Basicly this script will change the mac address to a random one and will pick a random hostname from specified file.</p>
+
+<p>WRITTEN BY: Andrei Zgirvaci</p>
+
+<p>DISCLAIMER: This is only for testing purposes and can only be used where strict consent has been given. Do not use this for illegal purposes, period.</p>
+
+<p>CONTRIBUTE: Contributions are always welcome!</p>
+
+<p><em>If you can, please take a minute to star this repo and follow me, It will be much appreciated!!!</em></p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>To install this script, type following commands in your shell:</p>
+
+<pre><code>  git clone https://github.com/MD3XTER/hide-me
+</code></pre>
+
+<p>To execute script from anywhere, add this to ~/.bashrc:</p>
+
+<pre><code>  PATH=/path/to/hide-me:"$PATH"
+</code></pre>
+
+<p><em>Restart terminal and now you can type 'hide-me' from anywhere and it will execute!</em></p>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h2>
+
+<ol>
+<li>
+<strong><em>python</em></strong> version &gt; <strong><em>3.5</em></strong> installed</li>
+<li>Command <strong><em>hostname</em></strong> should be available</li>
+<li>
+<strong><em>macchanger</em></strong> installed</li>
+</ol>
+
+<p>You can install macchanger by typing next line:</p>
+
+<pre><code>apt-get install macchanger
+</code></pre>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Usage: hide-me device [file_location]</p>
+
+<pre><code>  -h, --help       Print this help
+  [file_location]  Indicate file location with hostnames
+  quit             Retrieve changes to original
+</code></pre>
+
+<p><em>A default .txt file with random hostnames is located in 'dict' folder</em></p>
+
+<h2>
+<a id="tested-platforms" class="anchor" href="#tested-platforms" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tested platforms</h2>
+
+<ul>
+<li>Linux</li>
+</ul>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA</p>
+
+<p>See 'LICENSE' for more information.</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
