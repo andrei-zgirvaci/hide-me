@@ -1,4 +1,4 @@
-#Mac and hostname random changer (hide-me)
+# Mac and hostname random changer (hide-me)
 Every time I was trying to do an Network Penetration Testing, I needed to do some steps to make sure I was hidden, put my interface down, change my mac address, change my hostname, putting interface back up, and restarting network-manager service, and when done, changing my mac address and hostname to original one. This took me a while and sometimes I even forgot to do something from those steps. Then I came to an idea to make a script that does all that for me. Basicly this script will change the mac address to a random one and will pick a random hostname from specified file.
 
 WRITTEN BY: Andrei Zgirvaci
@@ -9,10 +9,10 @@ CONTRIBUTE: Contributions are always welcome!
 
 *If you can, please take a minute to star this repo and follow me, It will be much appreciated!!!*
 
-##Demo
+## Demo
 ![](http://i.giphy.com/3oz8xTbSW387bfklB6.gif)
 
-##Installation
+## Installation
 To install this script, type following commands in your shell:
 ```
   git clone https://github.com/MD3XTER/hide-me
@@ -25,7 +25,7 @@ To execute script from anywhere, add this to ~/.bashrc:
 
 *Restart terminal and now you can type 'hide-me' from anywhere and it will execute!*
 
-##Requirements
+## Requirements
   1. **_python_** version > **_3.5_** installed
   2. Command **_hostname_** should be available
   3. **_macchanger_** installed
@@ -35,7 +35,7 @@ You can install macchanger by typing next line:
 apt-get install macchanger
 ```
 
-##Usage
+## Usage
 Usage: hide-me device [file_location]
 ```
   -h, --help       Print this help
@@ -45,10 +45,10 @@ Usage: hide-me device [file_location]
 
 *A default .txt file with random hostnames is located in 'dict' folder*
 
-##Tested platforms
+## Tested platforms
   * Linux
 
-##License
+## License
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or any later version.
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
